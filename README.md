@@ -11,7 +11,7 @@ So far, I use Python's [Dask](https://www.dask.org/) distributed computing libra
 One feature of Dask that I use frequently is lazy evaluation, which brings major performance benefits.
 
 1. It reduces unecessary computation, by invoking it only when needed
-2. Improves memmory efficiency, by avoiding heavy occupancy of memory when the task is not needed yet.
+2. Improves memory efficiency, by avoiding heavy occupancy of memory when the return value of a task is not needed yet.
 3. The decoupling of the lazy task from the main thread can allow for more fine-grained control over the workflow.
 
 I hope to also implement the algorithms again from scratch in C++, and redo it again leveraging Go's multiprocessing paradigms. 
